@@ -1,0 +1,47 @@
+/*
+  =======================================
+  1. RESET BÁSICO (Para consistencia entre navegadores)
+  =======================================
+*/
+* {
+    /* Elimina el padding y el margen por defecto de la mayoría de los elementos */
+    margin: 0;
+    padding: 0;
+    /* Usa el modelo de caja border-box para facilitar el diseño */
+    box-sizing: border-box; 
+}
+
+/*
+  =======================================
+  2. ESTILOS GLOBALES
+  =======================================
+*/
+:root {
+    /* Define variables de color para usar en todo el proyecto */
+    --color-principal: #3498db; 
+    --color-fondo: #f4f4f4;
+    --color-texto: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/*
+  =======================================
+  3. ESTILOS DE COMPONENTES (Ejemplo)
+  =======================================
+*/
+header {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
