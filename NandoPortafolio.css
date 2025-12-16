@@ -1,47 +1,46 @@
-/*
-  =======================================
-  1. RESET BÁSICO (Para consistencia entre navegadores)
-  =======================================
-*/
+/* RESET: Limpia márgenes por defecto para mayor control */
 * {
-    /* Elimina el padding y el margen por defecto de la mayoría de los elementos */
     margin: 0;
     padding: 0;
-    /* Usa el modelo de caja border-box para facilitar el diseño */
-    box-sizing: border-box; 
-}
-
-/*
-  =======================================
-  2. ESTILOS GLOBALES
-  =======================================
-*/
-:root {
-    /* Define variables de color para usar en todo el proyecto */
-    --color-principal: #5f0f40; 
-    --color-fondo: #fb8b24;
-    --color-texto: #0f4c5c;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6; /* Espaciado cómodo para lectura */
+    color: #333;
+    max-width: 2000px; /* Ancho ideal para un CV */
+    margin: 0 auto;   /* Centra el contenido */
+    padding: 20px;
+    background-color: #f4f4f9;
 }
 
-/*
-  =======================================
-  3. ESTILOS DE COMPONENTES (Ejemplo)
-  =======================================
-*/
 header {
-    background-color: var(--color-principal);
-    color: white;
-    padding: 20px;
     text-align: center;
+    padding: 40px 0;
+    border-bottom: 3px solid #0056b3; /* Línea elegante de énfasis */
 }
 
-main {
+h1 { color: #0056b3; font-size: 2.5rem; }
+
+section {
+    margin: 30px 0;
+    background: white;
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #0056b3;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Estilo para las imágenes de proyectos */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
