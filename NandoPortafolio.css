@@ -7,38 +7,78 @@
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    line-height: 1.6; /* Espaciado cómodo para lectura */
-    color: #333;
-    max-width: 2000px; /* Ancho ideal para un CV */
-    margin: 0 auto;   /* Centra el contenido */
+    line-height: 1.6;
+    color: #4d4747;
+    max-width: 2000px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #f4f4f9;
+    background-color: #b7b7a4;
 }
 
 header {
-    text-align: center;
-    padding: 40px 0;
-    border-bottom: 3px solid #0056b3; /* Línea elegante de énfasis */
+    padding: 0; /* quitamos padding para que la imagen ocupe todo el ancho */
+    border-bottom: 7px solid #c6e3ae;
 }
 
-h1 { color: #0056b3; font-size: 2.5rem; }
+/* Contenedor para imagen de fondo y texto superpuesto */
+.contenedor {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
 
+.contenedor img {
+    width: 130%;
+    height: auto;
+    display: block;
+    filter: blur(2px);
+}
+
+/* Texto centrado sobre la imagen */
+.texto-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: rgb(27, 0, 150);
+    padding: 100px;
+}
+
+.texto-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(30, 3, 3, 0.7);
+}
+
+.texto-header .subtitle {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(255, 12, 12, 0.6);
+}
+
+/* Secciones del contenido */
 section {
     margin: 30px 0;
-    background: white;
+    background: #eddcd2;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 h2 {
-    color: #0056b3;
-    border-bottom: 1px solid #ddd;
+    color: #2f3e46;
+    border-bottom: 1px solid #cad2c5;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
 
-/* Estilo para las imágenes de proyectos */
+h1 {
+    color: #2f3e46;
+    font-size: 2.5rem;
+}
+
+/* Estilo general para imágenes fuera del header */
 img {
     max-width: 100%;
     height: auto;
